@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added plugin dogfooding guidance and a self-review checklist.
+- Added example outputs for setup project profiles, Laravel review findings, and compound learning capture.
+- Updated setup, review, and compound skills to support reusable project profiles and plugin self-improvement workflows.
+
 ## 0.1.0 - 2026-05-08
 
 - Initial Compound Laravel plugin.

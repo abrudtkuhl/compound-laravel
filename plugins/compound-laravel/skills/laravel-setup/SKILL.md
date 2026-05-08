@@ -33,6 +33,10 @@ Inspect the target repository and produce a concise setup report. Make only low-
    - Missing dependencies or configuration.
    - Safe next command to run.
    - Project-specific conventions future skills should honor.
+7. Write or update a project profile when the user asks for persistent setup context:
+   - Prefer `docs/compound-laravel/project-profile.md`.
+   - Include only durable facts agents can reuse.
+   - Do not include secrets, local-only credentials, or full `.env` values.
 
 ## Laravel Defaults
 
@@ -49,4 +53,44 @@ Return:
 - Framework/package summary.
 - Test, format, static-analysis, frontend, and queue commands.
 - Known risks or missing prerequisites.
+- Project profile path when one was written or updated.
 - Recommended next skill: `/laravel-plan`, `/laravel-work`, `/laravel-debug`, or `/laravel-review`.
+
+## Project Profile Shape
+
+Use this shape for persistent setup notes:
+
+```markdown
+# Compound Laravel Project Profile
+
+## App Shape
+
+- Laravel version:
+- PHP version:
+- Frontend:
+- Auth:
+- Queues/cache/mail/broadcasting:
+
+## Local Commands
+
+- Setup:
+- Test:
+- Format:
+- Static analysis:
+- Frontend build:
+
+## Conventions To Preserve
+
+- Validation:
+- Authorization:
+- Data access:
+- Testing:
+- Deployment/config:
+
+## Risks To Recheck
+
+- Migrations/data:
+- Queues/events:
+- External services:
+- Security:
+```

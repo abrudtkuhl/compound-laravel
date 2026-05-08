@@ -88,6 +88,16 @@ If no findings exist, say that clearly and mention remaining test or verificatio
 
 Only apply fixes when the user asked for fixes or the issue is clearly safe and local. Never auto-apply behavior-changing authorization, migration, or data fixes without approval.
 
+## Plugin Self-Review
+
+When reviewing this plugin repository instead of a Laravel application:
+
+- Use `docs/plugin-quality.md` as the checklist.
+- Verify every changed skill has a concrete trigger, workflow, output shape, and verification guidance.
+- Check that examples in `docs/examples/` match the behavior the skills ask agents to produce.
+- Confirm root and plugin READMEs stay aligned with the actual skill list.
+- Treat vague guidance as a finding when it would make an agent guess in a real Laravel codebase.
+
 ## Verification
 
 Recommend or run:
@@ -99,3 +109,5 @@ Recommend or run:
 - `npm run build`
 
 State which commands ran and which did not.
+
+See `docs/examples/laravel-review-output.md` for the expected finding shape.

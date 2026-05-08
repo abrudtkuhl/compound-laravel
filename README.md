@@ -1,6 +1,6 @@
 # Compound Laravel Plugin
 
-The Laravel-native companion to Compound Engineering.
+The Laravel-native companion to [Compound Engineering](https://every.to/guides/compound-engineering).
 
 Compound Laravel packages the plan -> work -> review -> compound loop for agents building real Laravel applications. It keeps the core Compound Engineering idea, but grounds every step in the framework primitives Laravel teams already use: Artisan, Eloquent, Form Requests, Policies, API Resources, Jobs, Events, Notifications, migrations, factories, queues, Pint, Pest, PHPUnit, and the conventions of the target app.
 
@@ -109,6 +109,16 @@ For features:
 /laravel-compound
 ```
 
+For improving this plugin itself, use the same loop with the plugin quality checklist:
+
+```text
+/laravel-plan "improve the compound-laravel plugin"
+/laravel-review
+/laravel-compound
+```
+
+The self-review checklist lives in `docs/plugin-quality.md`, with example outputs in `docs/examples/`.
+
 For bugs:
 
 ```text
@@ -123,12 +133,17 @@ For bugs:
 - 4 review agents for conventions, security, data safety, and testing.
 - Codex, Claude Code, and Cursor marketplace manifests.
 - Agent instructions that bias toward Laravel's existing conventions and the target application's local patterns.
+- Plugin QA guidance and example outputs for dogfooding the plugin itself.
 
 ## Where Things Live
 
 ```text
 compound-laravel/
 |-- README.md
+|-- docs/
+|   |-- plugin-quality.md
+|   |-- examples/
+|   `-- plans/
 |-- .agents/plugins/marketplace.json
 |-- .claude-plugin/marketplace.json
 |-- .cursor-plugin/marketplace.json

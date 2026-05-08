@@ -8,6 +8,8 @@ This plugin is for Laravel apps. Future agents should preserve Laravel-native de
 - Each skill should include concrete Laravel commands where useful, but must first inspect the target project and use its existing scripts.
 - Avoid hard-coding one stack. Laravel apps may use Blade, Livewire, Inertia, Vue, React, API-only controllers, Pest, PHPUnit, Sail, Herd, Valet, Horizon, Reverb, Sanctum, Passport, Cashier, Scout, or none of these.
 - When adding new skills, include success criteria and a verification checklist.
+- When improving this plugin, use `docs/plugin-quality.md` as the review checklist and add examples under `docs/examples/` when a skill needs a concrete output shape.
+- Keep the root `README.md`, plugin `README.md`, marketplace manifests, and `CHANGELOG.md` aligned when changing externally visible behavior.
 
 ## Review Bias
 

@@ -69,6 +69,16 @@ Files, PRs, docs, or tests that prove the learning.
 
 If the lesson changes future agent behavior, add a short note to `AGENTS.md`. Keep it actionable and project-specific.
 
+## Plugin Improvement Capture
+
+When improving this plugin itself, capture reusable process lessons in one of these places:
+
+- `docs/plugin-quality.md` for broad quality gates.
+- `docs/examples/` for output shapes future agents should imitate.
+- `plugins/compound-laravel/AGENTS.md` for durable rules about maintaining this plugin.
+
+Do not capture generic Laravel facts in plugin docs unless they directly improve a skill, agent, manifest, or example.
+
 ## Output
 
 Return:
@@ -76,3 +86,5 @@ Return:
 - Learning file path.
 - `AGENTS.md` update, if any.
 - One-line summary of how future work benefits.
+
+See `docs/examples/laravel-compound-learning.md` for the expected learning shape.

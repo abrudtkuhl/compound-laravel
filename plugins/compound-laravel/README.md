@@ -22,6 +22,16 @@ For bugs:
 /laravel-compound
 ```
 
+For improving this plugin itself, use the same loop against the plugin repository:
+
+```text
+/laravel-plan "improve the compound-laravel plugin"
+/laravel-review
+/laravel-compound
+```
+
+Use `docs/plugin-quality.md` as the self-review checklist and `docs/examples/` for expected output shapes.
+
 ## Skills
 
 | Skill | Purpose |
@@ -48,6 +58,15 @@ For bugs:
 - Treat migrations and data changes as production risk. Plan rollback, locking, backfills, defaults, and data integrity.
 - Use Pint before finalizing PHP changes. Use the project test runner, usually `php artisan test` or `composer run test`.
 - Prefer Pest when the project uses Pest; preserve PHPUnit if that is the existing stack.
+
+## Dogfooding The Plugin
+
+When changing this plugin:
+
+- Keep the root README, plugin README, marketplace manifests, and changelog aligned.
+- Use `docs/plugin-quality.md` to review skills, agents, manifests, and examples.
+- Add an example under `docs/examples/` when a skill needs a concrete output shape.
+- Capture recurring maintenance rules in `AGENTS.md`.
 
 ## Installation
 
