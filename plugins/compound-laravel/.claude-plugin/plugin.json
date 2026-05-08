@@ -1,0 +1,41 @@
+{
+  "name": "compound-laravel",
+  "version": "0.1.0",
+  "description": "Compound Engineering workflows and Laravel-native skills for building, reviewing, testing, and releasing Laravel applications.",
+  "author": {
+    "name": "Adam Brudtkuhl",
+    "url": "https://github.com/abrudtkuhl"
+  },
+  "homepage": "https://github.com/EveryInc/compound-engineering-plugin",
+  "repository": "https://github.com/abrudtkuhl/compound-laravel",
+  "license": "MIT",
+  "keywords": [
+    "compound-engineering",
+    "laravel",
+    "php",
+    "artisan",
+    "pest",
+    "pint",
+    "eloquent"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Compound Laravel",
+    "shortDescription": "Compound Engineering workflows tailored to Laravel applications.",
+    "longDescription": "Plan, build, review, test, release, and compound learnings in Laravel apps using Laravel-native conventions and tooling.",
+    "developerName": "Adam Brudtkuhl",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/abrudtkuhl/compound-laravel",
+    "defaultPrompt": [
+      "/laravel-setup",
+      "/laravel-plan add team invitations",
+      "/laravel-review"
+    ],
+    "screenshots": []
+  }
+}

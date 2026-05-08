@@ -1,0 +1,20 @@
+{
+  "name": "compound-laravel-plugin",
+  "interface": {
+    "displayName": "Compound Laravel"
+  },
+  "plugins": [
+    {
+      "name": "compound-laravel",
+      "source": {
+        "source": "local",
+        "path": "./plugins/compound-laravel"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    }
+  ]
+}

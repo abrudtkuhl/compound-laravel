@@ -1,0 +1,44 @@
+{
+  "name": "compound-laravel",
+  "version": "0.1.0",
+  "description": "Compound Engineering workflows and Laravel-native skills for building, reviewing, testing, and releasing Laravel applications.",
+  "author": {
+    "name": "Adam Brudtkuhl",
+    "url": "https://github.com/abrudtkuhl"
+  },
+  "homepage": "https://github.com/EveryInc/compound-engineering-plugin",
+  "repository": "https://github.com/abrudtkuhl/compound-laravel",
+  "license": "MIT",
+  "keywords": [
+    "ai-powered",
+    "compound-engineering",
+    "laravel",
+    "php",
+    "artisan",
+    "pest",
+    "pint",
+    "eloquent",
+    "code-review",
+    "workflow-automation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Compound Laravel",
+    "shortDescription": "Compound Engineering workflows tailored to Laravel applications.",
+    "longDescription": "Compound Laravel brings the Compound Engineering loop to Laravel projects: plan with framework conventions, execute with Artisan and project-native tooling, review for Laravel correctness, security, database safety, testing, and maintainability, then capture reusable learnings. It favors Laravel primitives such as Form Requests, Policies, Eloquent relationships, queues, events, resources, Pint, Pest/PHPUnit, migrations, factories, and Laravel Boost skills.",
+    "developerName": "Adam Brudtkuhl",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/abrudtkuhl/compound-laravel",
+    "defaultPrompt": [
+      "/laravel-setup",
+      "/laravel-plan add team invitations",
+      "/laravel-review"
+    ],
+    "screenshots": []
+  }
+}
